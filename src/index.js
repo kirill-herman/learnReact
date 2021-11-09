@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-const elem = <h2 className='test'>Hello World!</h2>;
+//const elem = <h2 className='test'>Hello World!</h2>;
 
 //same
 // const elem = React.createElement('h2', null || {className: 'test'}, 'Hello World!');
@@ -15,6 +15,17 @@ const elem = <h2 className='test'>Hello World!</h2>;
 //     children: 'Hello World!'
 //   }
 // };
+
+const text = 'Hello World!';
+
+const elem = (
+  <div>
+    <h2 className='text'>Text: {text}</h2>
+    <input type='text' />
+    <label htmlFor=''></label>
+    <button tabIndex='0'>Click</button>
+  </div>
+);
 
 ReactDOM.render(
   elem,
